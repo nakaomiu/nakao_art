@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #444;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid #444;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Photography</h1>
+    </header>
+    <section class="gallery">
+        <img src="https://source.unsplash.com/random/600x400?blackwhite" alt="Sample Photo 1">
+        <img src="https://source.unsplash.com/random/600x400?monochrome" alt="Sample Photo 2">
+        <img src="https://source.unsplash.com/random/600x400?dark" alt="Sample Photo 3">
+        <img src="https://source.unsplash.com/random/600x400?moody" alt="Sample Photo 4">
+    </section>
+    <footer>
+        &copy; 2025 Photographer Name | All Rights Reserved
+    </footer>
+</body>
+</html>
